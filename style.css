@@ -1,0 +1,15 @@
+.calc-btn {
+    transition:
+        background-color 0.15s ease,
+        transform 0.1s ease,
+        filter 0.15s ease;
+}
+
+.calc-btn:hover {
+    filter: brightness(1.12);
+}
+
+.calc-btn:active {
+    transform: scale(0.95);
+    filter: brightness(0.9);
+}

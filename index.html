@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="/style.css">   
     <title>My Calculator</title>
 </head>
 <body class="min-h-screen bg-slate-900 flex items-center justify-center">
@@ -12,11 +13,6 @@
         
         <!-- calculator display -->
         <div class="flex flex-col justify-end items-end h-35 mb-6">
-            
-            <!-- calculation display -->
-            <div class="text-[#95959c] text-2xl break-all">
-                12 + 9 x 7
-            </div>
 
             <!-- results display -->
             <div class="text-white text-5xl break-all">
@@ -26,52 +22,25 @@
 
         <!-- Buttons container -->
          <div class=" grid grid-cols-4 gap-1 pb-4 text-white">
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#5a5a5a] flex items-center justify-center">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    class="w-8 h-8"
-                    >
-                    <path
-                        d="M9 5L3 12L9 19H19C20.1046 19 21 15.1046 21 17V7C21 5.89543 20.1046 5 19 5H9Z"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linejoin="round"
-                    />
-                    <path
-                        d="M11 9L15 15"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                    />
-                    <path
-                        d="M15 9L11 15"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                    />
-                </svg>
-            </button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#5a5a5a] flex items-center justify-center">AC</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#5a5a5a] flex items-center justify-center">%</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#ff9200] flex items-center justify-center">÷</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">7</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">8</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">9</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#ff9200] flex items-center justify-center">×</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">4</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">5</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">6</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#ff9200] flex items-center justify-center">-</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">1</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">2</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">3</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#ff9200] flex items-center justify-center">+</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">±</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">0</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">.</button>
-            <button class="w-15 h-15 rounded-full text-2xl bg-[#ff9200] flex items-center justify-center">=</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#5a5a5a] flex items-center justify-center">AC</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#5a5a5a] flex items-center justify-center">+/-</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#5a5a5a] flex items-center justify-center">%</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#ff9200] flex items-center justify-center">÷</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">7</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">8</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">9</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#ff9200] flex items-center justify-center">×</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">4</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">5</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">6</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#ff9200] flex items-center justify-center">-</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">1</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">2</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">3</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#ff9200] flex items-center justify-center">+</button>
+            <button class="calc-btn w-32 h-15 col-span-2  rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">0</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#2f2f2f] flex items-center justify-center">.</button>
+            <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#ff9200] flex items-center justify-center">=</button>
          </div>
     </div>
 </body>

@@ -9,10 +9,10 @@
 </head>
 <body class="min-h-screen bg-slate-900 flex items-center justify-center">
     <!-- Main calculator container -->
-    <div class="w-[310px] max-w-[95vw] bg-black rounded-[3rem] p-6 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.8)]">
+    <div class="container w-[310px] max-w-[95vw] bg-black rounded-[3rem] p-6 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.8)]">
         
         <!-- calculator display -->
-        <div class="flex flex-col justify-end items-end h-35 mb-6">
+        <div id="display" class="flex flex-col justify-end items-end h-35 mb-6 ">
 
             <!-- results display -->
             <div class="text-white text-5xl break-all">
@@ -21,7 +21,7 @@
         </div>
 
         <!-- Buttons container -->
-         <div class=" grid grid-cols-4 gap-1 pb-4 text-white">
+         <div class="buttons grid grid-cols-4 gap-1 pb-4 text-white">
             <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#5a5a5a] flex items-center justify-center">AC</button>
             <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#5a5a5a] flex items-center justify-center">+/-</button>
             <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#5a5a5a] flex items-center justify-center">%</button>
@@ -43,5 +43,6 @@
             <button class="calc-btn w-15 h-15 rounded-full text-2xl bg-[#ff9200] flex items-center justify-center">=</button>
          </div>
     </div>
+    <script src="/index.js"></script>
 </body>
-</html>
+</html>>
